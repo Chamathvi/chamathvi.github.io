@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="icon" href="/favicon_updated.ico" sizes="any" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+    <script
+      src="https://kit.fontawesome.com/4d2cc2ee64.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>My Portfolio</title>
+  </head>
+
+  <body>
+    <div class="fixed-bg"></div>
+    <nav>
+      <img src="assets/images/logo.png" alt="nav-logo" />
+      <ul id="side-menu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <i
+          class="nav-icon fa-sharp fa-solid fa-xmark"
+          onclick="closeMenu()"
+        ></i>
+      </ul>
+      <i class="nav-icon fa-solid fa-bars" onclick="openMenu()"></i>
+    </nav>
+    <div class="container">
+      <div class="section home">
+        <h1>Hi, I'm <span>Chamathvi!</span></h1>
+        <h4>Currently a Software Engineering Undergraduate at SLTC.</h4>
+      </div>
+      <div id="about" class="section about">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="assets/images/img.jpg" />
+          </div>
+          <div class="about-col-2">
+            <h1>About Me</h1>
+            <p>
+              Hi! I'm Chamathvi, an SE Undergrad at SLTC, currently studying in
+              the first year curriculum. I'm eager to learn new technologies
+              even though at some times it feels like some modules can be a bit
+              difficult since I don't come from an IT background. I love to
+              listen to music, read books, and last but not least, play with our
+              lovely dog, Dephne! We call her by many names but at most times,
+              she loves being called Dephi.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-link active-link" onclick="openTab('skills')">
+                Skills
+              </p>
+              <p class="tab-link" onclick="openTab('experiences')">
+                Experiences
+              </p>
+              <p class="tab-link" onclick="openTab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Proficient Japanese Speaker</span>Studied Japanese
+                  Language for A/Ls and, achieved N4 and N5 Levels in Japanese
+                  Language Proficiency Test. Moreover, I conduct Japanese
+                  Language classes for those who intend to learn the art of
+                  reading, writing and speaking Japanese.
+                </li>
+                <li>
+                  <span>An Exemplary Cook</span>I love cooking! From little
+                  treats such as cupcakes to main and side courses, I do enjoy
+                  cooking at my leisure.
+                </li>
+                <li>
+                  <span>Never Giving Up</span>Battled through many hardships to
+                  have arrived where I am right now. I feel greatful for
+                  everyone especially my mom, dad and my beloved brothers for
+                  staying with me and supporting me always.
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experiences">
+              <ul>
+                <li>
+                  <span>Freelance Web Developing</span>Working as a web developer in multiple freelance platforms for more than 6 months.
+                </li>
+                <li>
+                  <span>Japanese Language Tutoring</span>Currently conduting N4, N5 Level Japanese classes for all ages since 2 years.
+                </li>
+                <li>
+                  <span>Python Language Proficiency</span>Gained fundamental and intermediate programming concepts through course work.
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>Subharathi Mahamathya Maha Vidyalaya</span>From pre-school to
+                  grade 5, I was blessed to have learned from the school of my
+                  hometown.
+                </li>
+                <li>
+                  <span>Anula Vidyalaya - Nugegoda</span>Learned upto A/Ls in
+                  the gracious and loving arms of mother Anula Vidyalaya.
+                </li>
+                <li>
+                  <span>Sri Lanka Technological Campus</span>Currently a first
+                  year undergrat pursuing the degree of Bachelor of Science
+                  Honours in Information Technology in Software Engineering.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="services" class="section services">
+        <h1>My Services</h1>
+        <div class="services-list">
+          <div class="service">
+            <div class="title">
+              <i class="fa-solid fa-code"></i>
+              <h2>Web development</h2>
+            </div>
+            <p>
+              Web development involves building and designing websites using
+              programming languages like HTML, CSS, and JavaScript. It is an
+              interesting field that requires technical skills and creativity to
+              create unique and engaging websites. Web development offers a wide
+              range of career opportunities, from front-end development to
+              full-stack development.
+            </p>
+          </div>
+          <div class="service">
+            <div class="title">
+              <i class="fa-solid fa-code"></i>
+              <h2>Database design and management</h2>
+            </div>
+            <p>
+              Database design and management involves creating and managing
+              large amounts of data, which requires a good understanding of data
+              structures and management systems. It is an essential aspect of
+              many industries, from healthcare to finance, providing diverse
+              opportunities for career growth and specialization.
+            </p>
+          </div>
+          <div class="service">
+            <div class="title">
+              <i class="fa-solid fa-code"></i>
+              <h2>UI/UX design</h2>
+            </div>
+            <p>
+              UI/UX design involves creating user interfaces and experiences
+              that are aesthetically pleasing and intuitive to use. It requires
+              a good understanding of human-computer interaction, as well as
+              knowledge of design principles and tools. UX/UI design is a
+              rapidly growing field, with the rise of mobile and web
+              applications, making it an exciting and dynamic career path.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div id="portfolio" class="section portfolio">
+        <h1>My Portfolio</h1>
+        <div class="portfolio-list">
+          <div class="portfolio-item">
+            <img src="/assets/images/work1.jpg" alt="Work 1" />
+            <div class="details">
+              <h3>Certificate Photos Maybe?</h3>
+              <p>Certificate photos wage danna :)</p>
+            </div>
+          </div>
+          <div class="portfolio-item">
+            <img src="/assets/images/work2.jpg" alt="Work 2" />
+            <div class="details">
+              <h3>Certificate Photos Maybe?</h3>
+              <p>Certificate photos wage danna :)</p>
+            </div>
+          </div>
+          <div class="portfolio-item">
+            <img src="/assets/images/work3.jpg" alt="Work 3" />
+            <div class="details">
+              <h3>Certificate Photos Maybe?</h3>
+              <p>Certificate photos wage danna :)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="contact" class="section contact">
+        <div class="row">
+          <div class="contact-left">
+            <h1>Contact Me</h1>
+            <p><i class="fa-solid fa-envelope"></i> chamathvikawya@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i> 076 237 3653</p>
+            <div class="social-icons">
+              <a
+                href="https://www.facebook.com/profile.php?id=100079008047794"
+                target="_blank"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a href=""><i class="fa-brands fa-twitter"></i></a>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+            </div>
+            <br /><br />
+            <button class="btn">
+              <a style="all: unset" href="assets/images/Cv.pdf" download
+                >Download CV</a
+              >
+            </button>
+          </div>
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+                required
+              ></textarea>
+              <button type="submit" class="btn" style="margin-top: 8px">
+                Submit
+              </button>
+            </form>
+            <br />
+            <p id="form-response"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>Copyright Ⓒ Chamathvi ♥</p>
+    </div>
+    <script src="js/app.js"></script>
+  </body>
+</html>
